@@ -1,0 +1,26 @@
+* {
+    background-color: #fffbf7;
+}
+h1 {
+    color: #025157;
+}
+form input{
+    margin: 0;
+    display: inline-block;
+}
+form button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+}
+#textodebajo {
+    color:  #46484c;
+}
+#promocional {
+    color: #8b8b8bcc
+
+}
