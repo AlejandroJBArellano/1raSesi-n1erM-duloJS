@@ -1,55 +1,103 @@
-* {
+body {
     background-color: #fffbf7;
+    margin: 0px;
+    padding: 0px;
 }
-.cabecera {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+.fixed-header {
+    margin: 40px 20px 0;
     font-size: 0;
+    text-align: center;
+    position: relative;
+    
 }
-.cabecera > * {
+.header > * {
     display: inline-block;
     font-size: 16px;
-    vertical-align: middle;
     height: 100%;
     line-height: 45px;
-}
-.img {
-    width: 15%;
-    height: 100%;
-}  
-.barra {
-    width: 70%;
-    text-align: center;
-    color: #025157;
-    font-weight: 500;
-}  
-.interaccion {
-    width: 15%;
-    text-align: right;
-    font-size: 14px;
-    font-weight: 600;
-}
-h1 {
-    color: #025157;
-}
-form input{
-    margin: 0;
-    display: inline-block;
-}
-form button {
-    background-color: #025157;
-    color: #fff;
-    border: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 6px 20px;
-    margin-left: -10px;
-}
-#textodebajo {
-    color:  #46484c;
-}
-#promocional {
-    color: #8b8b8bcc
+    position:relative;
 
 }
+.logo {
+    width:20%;
+    text-align: left;
+}
+.logo > img {
+    height: 100%;
+    vertical-align: middle;
+}
+.navbar {
+    width: 50%;
+    color: #025157;
+
+}
+.menu {
+    padding: 0;
+}
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+.actions {
+    width: 15%;
+    text-align: right;
+}
+.actions > * {
+    margin: 0 10px;
+}
+.actions a {
+    color: #67b54b
+}
+.actions button {
+    background-color: #67b54b;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 20px;
+}
+.main {
+    margin-top: 140px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main h1 {
+    color: #025157;
+    font-weight: 900;
+    font-size: 60px;
+    font-family: "Alegreya", serif;
+}
+.texto-gris {
+    color: #46484c;
+}
+.main form button {
+    color: #fff;
+    background-color: #025157;
+    height: 47px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+}
+    .main form input {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 45px;
+    margin-right: -5px;
+    border: 1px solid #c6c6c6;
+    padding: 0 5px;
+}
+.main .grey-text {
+    color: #a6a6a6;
+    margin-bottom: 5px;
+}
+.main .banner {
+    margin-top: 25px;
+    text-align: center;
+}
+.main .second-image {
+    width: 70%;
