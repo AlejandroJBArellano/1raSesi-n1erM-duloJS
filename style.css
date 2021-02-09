@@ -4,19 +4,20 @@ body {
     padding: 0px;
 }
 .fixed-header {
-    margin: 40px 20px 0;
+    padding: 40px 20px 0;
     font-size: 0;
     text-align: center;
-    position: relative;
-    background-color: #025157;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fffbf7;
 }
 .header > * {
     display: inline-block;
     font-size: 16px;
     height: 100%;
     line-height: 45px;
-    position:relative;
-
 }
 .logo {
     width:20%;
@@ -41,7 +42,7 @@ body {
     padding-left: .5rem;
     color: red;
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
 }
 .actions {
     width: 15%;
@@ -83,7 +84,7 @@ body {
     border-bottom-right-radius: 6px;
     border: none;
 }
-    .main form input {
+.main form input {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     height: 45px;
@@ -101,3 +102,64 @@ body {
 }
 .main .second-image {
     width: 70%;
+}
+.video-publish {
+    display: flex;
+    flex: 1;
+    max-width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+.video-publish div {
+    text-align: center;
+    flex: 1;
+}
+.video-publish div iframe {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.video-publish div img {
+    width: 120px;
+    height: 40px;
+}
+.publish {
+    flex: 1;
+}
+.publish h3{
+    color: #025157;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Alegreya", serif;
+}
+.publish > p{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.publish div p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px
+}
+.publish form button {
+    color: #fff;
+    background-color: #025157;
+    height: 47px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+}
+.publish div form input {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 45px;
+    margin-right: -5px;
+    border: 1px solid #c6c6c6;
+    padding: 0 5px;
+}
