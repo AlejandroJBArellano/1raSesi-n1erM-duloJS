@@ -21,6 +21,7 @@ body {
     right: 0;
     left: 0;
     background-color: #fffbf7;
+    z-index: 3;
 }
 .header > * {
     display: inline-block;
@@ -260,4 +261,120 @@ body {
     right: -50px;
     height: 80%;
 }
-
+.navbar-toggler {
+    display: none;
+}
+iframe {
+    width: 428px;
+    height:240px;
+}
+.how-does-it-work {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+.how-does-it-work .title {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+}
+/* @media (min-width:375px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media (min-width:320px) and (max-width:425px) {
+    .header{
+        display: none;
+        position: static;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    .header{
+        display: none;
+        position: static;
+    }
+} */
+@media (max-width:768px) {
+    .navbar-toggler, .{
+        display: revert;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+    .navbar, .actions{
+        display: none;
+        position: absolute;
+    }
+    .logo {
+        display: revert;
+    }
+    .menu {
+        position: absolute;
+    }
+    .main {
+        margin-top: 91px;
+    }
+    .main h1 {
+        font-size: 35px;
+        margin-top: 0;
+    }
+    .feature-image {
+        display: block;
+        position: relative;
+    }
+    .main .banner {
+        margin-top: 0;
+    }
+    .main .banner > img{
+        width: 100%;
+        padding: 5px;
+    }
+    .second-image {
+        display: none;
+        width: 0;
+    }
+    
+    .video-publish {
+        margin: 0 auto;
+    }
+    .video-publish .publish > h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .video-publish .publish .formulario > .signup-form {
+        margin-bottom: 10px;
+    }
+    .video-publish div iframe {
+        width: 100%;
+    }
+    .video-publish {
+        flex-direction: column;
+    }
+    .UwU {
+        grid-template-rows: repeat(4, 330px);
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .UwU-tarjeta {
+        width: 90%;
+    }
+    .UwU .UwU-tarjeta .feature-image {
+        display: none;
+    }
+    .how-does-it-work .steps {
+        display: grid;
+    }
+    .how-does-it-work .title {
+        font-size: 30px;
+    }
+    .card-step-image:first-child{
+        width: 100%;
+    }
+}
