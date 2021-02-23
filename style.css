@@ -271,26 +271,26 @@ iframe {
     height:240px;
 }
 
-.success-stories {
+.carousel-inner {
     background-color: #a1d683;
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.success-stories .overview h2 {
+.carousel-inner .overview h2 {
     font-family: "Alegreya", serif;
     font-size: 51px;
     line-height: 61px;
     color: #025157;
 }
-.success-stories .overview p {
+.carousel-inner .overview p {
     color: #343434;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.success-stories .overview button {
+.carousel-inner .overview button {
     font-size: 14px;
     padding: 12px 12px 6px 12px;
     border-radius: 8px;
@@ -300,23 +300,23 @@ iframe {
     background-color: #025157;
     color: #fffbf7;
 }
-.success-stories .overview img {
+.carousel-inner .overview img {
     width: 500px;
     max-width: 100%;
 }
-.success-stories .stories-carousel .card {
+.carousel-inner .carousel-item .card {
     max-width: 370px;
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
 }
-.success-stories .stories-carousel .card .card-media {
+.carousel-inner .carousel-item .card .card-media {
     position: relative;
 }
-.success-stories .stories-carousel .card .card-media figure {
+.carousel-inner .carousel-item .card .card-media figure {
     margin-top: 0;
 }
-.success-stories .stories-carousel .card .card-media .company {
+.carousel-inner .carousel-item .card .card-media .company {
     position: absolute;
     bottom: -20px;
     right: 20px;
@@ -328,28 +328,28 @@ iframe {
     justify-content: center;
     align-items: center;
 }
-.success-stories .stories-carousel .card .card-media .company img {
+.carousel-inner .carousel-item .card .card-media .company img {
     max-width: 75%;
 }
-.success-stories .stories-carousel .card .card-body h3 {
+.carousel-inner .carousel-item .card .card-body h3 {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 20px;
 }
-.success-stories .stories-carousel .card .card-body h4 {
+.carousel-inner .carousel-item .card .card-body h4 {
     color: #025157;
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     margin-bottom: 12px;
 }
-.success-stories .stories-carousel .card .card-body .results {
+.carousel-inner .carousel-item .card .card-body .results {
     display: flex;
     align-items: center;
     color: #828282;
 }
-.success-stories .stories-carousel .card .card-body .results img {
+.carousel-inner .carousel-item .card .card-body .results img {
     width: 26px;
     margin-right: 20px;
 }
@@ -450,7 +450,7 @@ iframe {
 .normal {
     display: none;
 }
-.success-stories .stories-carousel .carousel-indicators {
+.carousel-inner .carousel-item .carousel-indicators {
     position: initial; /** ó: position: static; */
     right: 0;
     bottom: 0;
@@ -462,7 +462,7 @@ iframe {
     margin: 0 auto;
     /* list-style: none; */
 }
-.success-stories .stories-carousel .card {
+.carousel-inner .carousel-item .card {
     width: 80%;
     background-color: #fff;
     border-radius: 10px;
@@ -470,14 +470,14 @@ iframe {
     color : #025157;
     position: relative;
 }
-.success-stories .stories-carousel .card .everly {
+.carousel-inner .carousel-item .card .everly {
     background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png');
     height: 275px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.success-stories .stories-carousel .card .card-circle-everly {
+.carousel-inner .carousel-item .card .card-circle-everly {
     position: absolute;
     bottom: 255px;
     right: 20px;
@@ -492,6 +492,12 @@ iframe {
     background-repeat: no-repeat;
     padding: 5px;
     border: 5px solid #f9da73;
+}
+.carousel-inner .carousel-item .card .card-media img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .card-container {
     background-color: #a1d683;
@@ -576,6 +582,9 @@ iframe {
     outline: hidden;
 }
 @media (max-width:768px) {
+    body {
+        width: 100%;
+    }
     .navbar-toggler {
         padding: .25rem .75rem;
         font-size: 1.25rem;
@@ -644,8 +653,7 @@ iframe {
         grid-template-columns: 1fr;
         padding: 0;
     }
-    .UwU-tarjeta {
-        width: 90%;
+    .UwU .UwU-tarjeta .UwU-content {
     }
     .UwU .UwU-tarjeta .feature-image {
         display: none;
@@ -664,5 +672,6 @@ iframe {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }
