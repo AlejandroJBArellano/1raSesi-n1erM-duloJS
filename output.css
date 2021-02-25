@@ -1,0 +1,177 @@
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+  font-weight: 600;
+}
+
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+  display: flex;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #025157;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon grid img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  background-color: #025157;
+  color: #ffffff;
+}
+.blog .col .card > img {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+.blog .col .card .card-body .card-title {
+  color: #4a4a4a;
+}
+.blog .col .card .card-body .metadata {
+  font-size: 14px;
+  font-weight: 500;
+}
+.blog .col .card .card-body .metadata .category {
+  color: #67b54b;
+}
+.blog .col .card .card-body .metadata .read.time {
+  color: #979797;
+}
+.blog .col .card .card-body .author {
+  display: flex;
+}
+.blog .col .card .card-body .author > img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.blog .col .card .card-body .author p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.home-people {
+  background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png);
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  height: 350px;
+}
+
+.try-it {
+  background-color: #96d178;
+  padding: 5% 5% 2%;
+  margin-top: -30px;
+}
+.try-it h2 {
+  font-family: "Alegreya", serif;
+  font-weight: 600;
+  color: #025157;
+  font-size: 60px;
+}
+.try-it form {
+  margin: 20px 0 15px 0;
+}
+.try-it p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+}
+
+.cta {
+  padding: 5% 10% 0;
+  margin: 0;
+  max-width: unset;
+}
+.cta .box {
+  background-color: #025157;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5%;
+}
+.cta .box:first-child h2 {
+  font-family: "Alegreya", serif;
+  font-size: 34px;
+  max-width: 340px;
+  line-height: 1.3;
+}
+.cta .box:first-child p {
+  margin-top: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.cta .box:first-child p a {
+  color: #67b54b;
+}
+.cta .box:nth-child(2) form {
+  height: 55px;
+}
+.cta .box:nth-child(2) form input {
+  vertical-align: middle;
+}
+.cta .box:nth-child(2) form button {
+  background-color: #67b54b;
+}
+.cta .box:nth-child(2) form + p {
+  color: #b3cbcd;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+.signup-form input {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 45px;
+  margin-right: -5px;
+  border: 1px solid #c6c6c6;
+  padding: 6px 20px;
+}
+.signup-form button {
+  color: #ffffff;
+  background-color: #67b54b;
+  height: 47px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+}
+.signup-form:nth-child(3) button {
+  background-color: #67b54b;
+}
+
+/*# sourceMappingURL=output.css.map */
